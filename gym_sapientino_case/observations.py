@@ -87,9 +87,9 @@ class ContinuousRobotFeatures(AbstractRobotFeatures):
             y_space,
             cos_space,
             sin_space,
-            dx_space,
-            dy_space,
-            ang_velocity_space,
+            #dx_space,
+            #dy_space,
+            #ang_velocity_space,
         )
 
         return GymTuple((sapientino_space, self.automata_space))
@@ -107,9 +107,9 @@ class ContinuousRobotFeatures(AbstractRobotFeatures):
                 robot_state["y"],
                 cos,
                 sin,
-                robot_state["velocity"] * cos,
-                robot_state["velocity"] * sin,
-                robot_state["ang_velocity"],
+                #robot_state["velocity"] * cos,
+                #robot_state["velocity"] * sin,
+                #robot_state["ang_velocity"],
             ]
         )
         return sapientino_state, automata_states
