@@ -42,6 +42,8 @@ class SapientinoCase(gym.Wrapper):
         params=None,
         map_file: Optional[Path] = None,
         logdir: Optional[str] = None,
+        end_on_success = True,
+        end_on_failure = True
     ):
         """Initialize.
 
@@ -75,6 +77,8 @@ class SapientinoCase(gym.Wrapper):
         env = MyTemporalGoalWrapper(
             env=env,
             temp_goals=[tg],
+            end_on_success=end_on_success,
+            end_on_failure=end_on_failure
         )
 
         # Choose a specific observation space
