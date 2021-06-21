@@ -20,3 +20,7 @@ __pycache__/
 /tags
 *~
 [._]*.un~
+
+# Macos :(
+.DS_Store
+
